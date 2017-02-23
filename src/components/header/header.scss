@@ -1,0 +1,8 @@
+@import "~css/constants.scss";
+
+header {
+    align-items: center;
+    display: flex;
+    font-size: 0.85rem;
+    height: $header-height;
+}

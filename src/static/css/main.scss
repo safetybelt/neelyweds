@@ -1,0 +1,57 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+@import "~css/constants.scss";
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+  font-size: 1.2em;
+  padding: 0 0.2em;
+}
+
+html {
+    background-color: $background;
+    box-sizing: border-box;
+    color: $text-primary;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 22px;
+    font-weight: $standard-font-weight;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: $strong-font-weight;
+}
+
+h3 {
+    font-weight: $standard-font-weight;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 0 $content-padding;
+    width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    &:hover {
+        color: inherit;
+    }
+    &:visited {
+        color: inherit;
+    }
+}
+
+section {
+    min-height: calc(100vh - #{$header-height + $footer-height});
+    padding-top: 1.5rem;
+    @media (max-width: $mobile-width) {
+        margin-top: $header-height;
+    }
+}
