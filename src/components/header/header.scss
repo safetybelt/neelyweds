@@ -6,6 +6,10 @@ header {
     height: $header-height;
     z-index: 100;
     @media (max-width: $mobile-width) {
+        align-items: center;
+        display: flex !important;
+        flex-flow: row nowrap;
+        justify-content: space-between;
         left: 0;
         padding: 1em;
         position: fixed;
@@ -26,11 +30,35 @@ header {
 }
 
 .menu {
-    color: $inverse-text-primary;
+    color: $primary-dark;
     cursor: pointer;
     display: none !important;
     font-size: 2em;
     @media (max-width: $mobile-width) {
         display: inline-block !important;
     }
+}
+
+.mobile-only {
+    display: none;
+    @media (max-width: $mobile-width) {
+        display: inline-block;
+    }
+}
+
+.menu-cover {
+    display: block;
+    @media (max-width: $mobile-width) {
+        background: transparentize($background-dark, $opacity-disabled);
+        bottom: 0;
+        left: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+}
+
+.disabled {
+    display: none !important;
 }

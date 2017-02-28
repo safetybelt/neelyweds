@@ -160,7 +160,6 @@ module.exports = {
             'beforeColon': false,
             'afterColon': true
         }],
-        'linebreak-style': 2,
         'lines-around-comment': [0, {
             'beforeBlockComment': true
         }],
