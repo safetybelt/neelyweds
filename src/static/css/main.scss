@@ -1,33 +1,35 @@
-@import url(http://weloveiconfonts.com/api/?family=entypo);
 @import "~css/constants.scss";
 
-/* entypo */
-[class*="entypo-"]:before {
-  font-family: 'entypo', sans-serif;
-  font-size: 1.2em;
-  padding: 0 0.2em;
-}
-
 html {
-    background-color: $background;
+    background: #4dd0e1;
+    background: linear-gradient(135deg, $primary-light 0%, $primary-dark 100%);
     box-sizing: border-box;
     color: $text-primary;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 22px;
+    font-family: 'Merriweather Sans', serif;
+    font-size: 18px;
     font-weight: $standard-font-weight;
+    min-height: 100%;
 }
 
 *, *:before, *:after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
-h1, h2, h3, h4 {
-    font-family: 'Oswald', sans-serif;
-    font-weight: $strong-font-weight;
-}
-
-h3 {
+h1, h2 {
+    font-family: 'Yeseva One', cursive;
     font-weight: $standard-font-weight;
+    margin: 0.5rem;
+}
+
+h3, h4 {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 2.25rem;
+    font-weight: $extra-strong-font-weight;
+    margin: 0;
+}
+
+h4 {
+    font-size: 2rem;
 }
 
 .container {

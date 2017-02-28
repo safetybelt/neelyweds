@@ -12,7 +12,7 @@ rules.push({
     exclude: /(node_modules|bower_components|public)/,
     loader: ExtractTextPlugin.extract({
         fallback: 'style-loader',
-        loader: 'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]',
+        loader: 'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!resolve-url-loader',
     }),
 });
 
@@ -22,7 +22,7 @@ rules.push({
     exclude: /(node_modules|bower_components|public)/,
     loader: ExtractTextPlugin.extract({
         fallback: 'style-loader',
-        loader: 'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss!sass',
+        loader: 'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader!resolve-url-loader!sass-loader',
     }),
 });
 // global css files
@@ -30,7 +30,7 @@ rules.push({
     test: /[\/\\](node_modules|global)[\/\\].*\.css$/,
     loader: ExtractTextPlugin.extract({
         fallback: 'style-loader',
-        loader: 'css-loader',
+        loader: 'css-loader!resolve-url-loader',
     }),
 });
 

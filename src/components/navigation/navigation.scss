@@ -1,0 +1,55 @@
+@import "~css/constants.scss";
+
+.navigation {
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100%;
+    justify-content: space-around;
+    width: 100%;
+    z-index: 100;
+    @media (max-width: $mobile-width) {
+        display: none !important;
+        align-items: flex-end;
+        flex-flow: column nowrap;
+        position: absolute;
+        right: 0;
+        top: $header-height;
+        a {
+            display: none;
+        }
+    }
+}
+
+.nav-link {
+    display: inline-block !important;
+    font-size: 1.2em;
+    margin-top: 0.5em;
+    text-align: center;
+    width: 15%;
+    &:after {
+        background-color: $primary-dark;
+        content: '';
+        display: block;
+        height: 2px;
+        margin: 0.2em auto 0;
+        transition: width 0.5s ease;
+        width: 0px;
+    }
+    &:hover:after {
+        width: 100%;
+    }
+    @media (max-width: $mobile-width) {
+        width: auto;
+    }
+}
+
+.active {
+    &:after {
+        width: 100%;
+    }
+}
+
+.menuActive {
+    display: flex !important;
+}

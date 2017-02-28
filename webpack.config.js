@@ -17,6 +17,8 @@ rules.push({
        },
    }, {
        loader: 'css-loader',
+   }, {
+       loader: 'resolve-url-loader',
    }],
 });
 
@@ -38,6 +40,8 @@ rules.push({
    }, {
        loader: 'postcss-loader',
    }, {
+       loader: 'resolve-url-loader',
+   }, {
        loader: 'sass-loader',
    }],
 });
@@ -57,6 +61,8 @@ rules.push({
            importLoaders: 1,
            localIdentName: '[path]___[name]__[local]___[hash:base64:5]',
        },
+   }, {
+       loader: 'resolve-url-loader',
    }],
 });
 
@@ -77,6 +83,7 @@ module.exports = {
             components: path.resolve(__dirname, 'src', 'components'),
             css: path.resolve(__dirname, 'src', 'static', 'css'),
             containers: path.resolve(__dirname, 'src', 'containers'),
+            img: path.resolve(__dirname, 'src', 'static', 'img'),
             reducers: path.resolve(__dirname, 'src', 'reducers'),
             utils: path.resolve(__dirname, 'src', 'utils'),
         },

@@ -1,6 +1,7 @@
 import { About } from 'containers';
+import { Home } from 'components';
 
 export default [
-    { path: '/', title: 'About', component: About },
-    { path: '/about', title: 'About', component: About },
+    { path: '/', title: 'Home', component: Home },
+    { path: '/story', title: 'Story', component: About },
 ];
