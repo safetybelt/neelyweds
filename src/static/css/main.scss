@@ -1,7 +1,7 @@
 @import "~css/constants.scss";
 
 html {
-    background: #4dd0e1;
+    background: $primary;
     background: linear-gradient(135deg, $primary-light 0%, $primary-dark 100%);
     box-sizing: border-box;
     color: $text-primary;
@@ -51,9 +51,10 @@ a {
 }
 
 section {
-    min-height: calc(100vh - #{$header-height + $footer-height});
-    padding-top: 1.5rem;
+    background: $background;
+    margin-top: 1.5rem;
+    padding: 1rem 1rem 2rem;
     @media (max-width: $mobile-width) {
-        margin-top: $header-height;
+        margin-top: $header-height + 1.5rem;
     }
 }
