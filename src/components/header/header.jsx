@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
 import { Navigation } from 'components';
 
-import styles from './header.scss';
+import './header.scss';
 
 const links = [{
     title: 'Our Story',
@@ -26,13 +26,13 @@ const links = [{
 const Header = ({ path, toggleMenu, menuActive }) => {
     return (
         <header>
-            <Link to="/"><h1 className={styles['mobile-only']}>J <i className="icon ion-ios-heart" /> S</h1></Link>
-            <div className={menuActive ? styles['menu-cover'] : styles.disabled} onClick={toggleMenu} />
+            <Link to="/"><h1 className="mobile-only">J <i className="icon ion-ios-heart" /> S</h1></Link>
+            <div className={menuActive ? 'menu-cover' : 'disabled'} onClick={toggleMenu} />
             <span
-                className={`${styles.menu} icon ${menuActive ? 'ion-close-round' : 'ion-navicon-round'}`}
+                className={`menu icon ${menuActive ? 'ion-close-round' : 'ion-navicon-round'}`}
                 onClick={toggleMenu}
             />
-            <div className={styles['header-background']} />
+            <div className="header-background" />
             <Navigation links={links} active={path} menuActive={menuActive} />
         </header>
     );

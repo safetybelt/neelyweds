@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
-import styles from './navigation.scss';
+import './navigation.scss';
 
 /* eslint-disable react/no-multi-comp */
 
@@ -16,11 +16,11 @@ const getText = (link) => {
 };
 
 const getClassName = (link, active) => {
-    return link.main ? null : `${styles['nav-link']} ${link.route === active ? styles.active : ''}`;
+    return link.main ? null : `nav-link ${link.route === active ? 'active' : ''}`;
 };
 
 const Navigation = ({ links, active, menuActive }) => (
-    <nav className={`${styles.navigation} ${menuActive ? styles.menuActive : ''}`}>
+    <nav className={`navigation ${menuActive ? 'menu-active' : ''}`}>
         {links.map((link) => {
             return (
                 <Link to={link.route} key={link.route} className={getClassName(link, active)}>

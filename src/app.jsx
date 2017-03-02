@@ -3,9 +3,7 @@ import { connect } from 'react-redux';
 import { HeaderContainer } from 'containers';
 import { setPath } from 'actions';
 import 'normalize.css/normalize.css';
-import styles from 'css/main.scss';
-
-const img = require('img/castle-kiss.jpg');
+import 'css/main.scss';
 
 class App extends React.Component {
     componentWillMount() {
@@ -26,7 +24,7 @@ class App extends React.Component {
 
     render() {
         return (
-            <div className={styles.container}>
+            <div className="container">
                 <HeaderContainer />
                 <main>
                     {this.props.children}
