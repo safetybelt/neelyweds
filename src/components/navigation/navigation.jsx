@@ -20,7 +20,7 @@ const getClassName = (link, active) => {
 };
 
 const Navigation = ({ links, active, menuActive }) => (
-    <nav className={`navigation ${menuActive ? 'menu-active' : ''}`}>
+    <nav className={menuActive ? 'menu-active' : null}>
         {links.map((link) => {
             return (
                 <Link to={link.route} key={link.route} className={getClassName(link, active)}>

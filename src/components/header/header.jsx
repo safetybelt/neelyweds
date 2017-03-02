@@ -29,10 +29,10 @@ const Header = ({ path, toggleMenu, menuActive }) => {
             <Link to="/"><h1 className="mobile-only">J <i className="icon ion-ios-heart" /> S</h1></Link>
             <div className={menuActive ? 'menu-cover' : 'disabled'} onClick={toggleMenu} />
             <span
-                className={`menu icon ${menuActive ? 'ion-close-round' : 'ion-navicon-round'}`}
+                className={`menu icon mobile-only ${menuActive ? 'ion-close-round' : 'ion-navicon-round'}`}
                 onClick={toggleMenu}
             />
-            <div className="header-background" />
+            <div className="background" />
             <Navigation links={links} active={path} menuActive={menuActive} />
         </header>
     );
