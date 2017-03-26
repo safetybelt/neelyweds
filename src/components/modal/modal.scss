@@ -1,0 +1,31 @@
+@import "~css/constants.scss";
+
+.modal {
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    
+    .modal-background {
+        background: $text-disabled;
+        bottom: 0;
+        left: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 200;
+    }
+
+    .modal-content {
+        background: $white;
+        box-shadow: $shadow-3;
+        min-height: 25vh;
+        position: fixed;
+        width: 75vw;
+        z-index: 250;
+    }
+}

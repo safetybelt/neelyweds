@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from './wedding.scss';
+import './wedding.scss';
 
 const Wedding = () => (
-    <section className={styles.wedding}>
+    <section className="wedding">
         this is the wedding section
     </section>
 );

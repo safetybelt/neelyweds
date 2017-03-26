@@ -5,7 +5,7 @@ html {
     background: linear-gradient(135deg, $primary-light 0%, $primary-dark 100%);
     box-sizing: border-box;
     color: $text-primary;
-    font-family: 'Merriweather Sans', serif;
+    font-family: 'Josefin Sans', serif;
     font-size: 18px;
     font-weight: $standard-font-weight;
     min-height: 100%;
@@ -16,13 +16,13 @@ html {
 }
 
 h1, h2 {
-    font-family: 'Yeseva One', cursive;
+    font-family: 'Sacramento', cursive;
     font-weight: $standard-font-weight;
     margin: 0.5rem;
 }
 
 h3, h4 {
-    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 2.25rem;
     font-weight: $extra-strong-font-weight;
     margin: 0;

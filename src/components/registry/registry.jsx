@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from './registry.scss';
+import './registry.scss';
 
 const Registry = () => (
-    <section className={styles.registry}>
+    <section className="registry">
         this is the registry section
     </section>
 );

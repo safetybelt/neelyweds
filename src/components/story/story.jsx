@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from './story.scss';
+import './story.scss';
 
 const Story = () => (
-    <section className={styles.story}>
+    <section className="story">
         this is the story section
     </section>
 );
