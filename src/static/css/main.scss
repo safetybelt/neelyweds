@@ -29,7 +29,8 @@ h3, h4 {
 }
 
 h4 {
-    font-size: 2rem;
+    font-size: 1.5em;
+    text-transform: lowercase;
 }
 
 a {
@@ -45,8 +46,10 @@ a {
 
 section {
     background: $background-light;
+    box-shadow: $shadow-2;
     margin-top: 1.5rem;
     padding: 1rem 1rem 2rem;
+    position: relative;
     @media (max-width: $mobile-width) {
         margin-top: $header-height + 1.5rem;
     }
