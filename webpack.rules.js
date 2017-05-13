@@ -48,7 +48,7 @@ module.exports = [
             },
         }],
     }, {
-        test: /\.jpg/,
+        test: /\.jpe?g/,
         exclude: /(node_modules|bower_components)/,
         use: [{
             loader: 'url-loader',

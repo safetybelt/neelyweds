@@ -1,3 +1,14 @@
+@import "~css/constants.scss";
+
 .story {
-    
+    align-items: flex-start;
+    display: flex;
+    flex-flow: column nowrap;
+    img {
+        align-self: center;
+        border: 0.75rem solid $white;
+        border-bottom: 1rem solid $white;
+        box-shadow: $shadow-4;
+        max-width: 100%;
+    }
 }
