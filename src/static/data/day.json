@@ -1,9 +1,10 @@
 [
     {
-        "text": "We’re excited to be married in Downtown Oakland at Perservation Park. Located close to Stephanie’s first Oakland apartment with Victorian housing reminiscent of Main St Disney, it felt like the perfect fit. You can learn more about Preservation Park’s history by checking it out here: {link}",
-        "link": {
+        "text": "We’re excited to be married in Downtown Oakland at Preservation Park. Located close to Stephanie’s first Oakland apartment with Victorian housing reminiscent of Main St Disney, it felt like the perfect fit. You can learn more about Preservation Park’s history by checking it out here: {link}",
+        "links": [{
             "url": "http://preservationpark.com/about/",
-            "text": "Preservation Park",
+            "text": "Preservation Park"
+        }]
     },
     "<hotel info tk - downtown Marriot at 1001 broadway will be #1 choice, I’ve emailed them for availability>",
     "<Oakland has a free shuttle down Broadway that runs on a schedule and can be picked up across the street from the hotel to 12th St. >",

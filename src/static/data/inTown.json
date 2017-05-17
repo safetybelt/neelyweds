@@ -1,0 +1,27 @@
+[
+    "We’re so happy you’re able to make the trip! We hope you’ll have a chance to explore Oakland and San Francisco while you’re here. We’ve listed a few of our favorite spots.",
+    {
+        "type": "header",
+        "text": "Oakland"
+    },
+    {
+        "text": "{link}{break}We had to include this one :) Great variety of beer, great mixed drinks, all outdoors to enjoy to California weather.",
+        "links": [{
+            "url": "http://www.madoakbar.com",
+            "text": "Mad Oak",
+            "class": "title"
+        }]
+    },
+    {
+        "type": "header",
+        "text": "San Francisco"
+    },
+    {
+        "text": "{link}{break}This is where you’ll land if you take the ferry at Jack London. There’s so much food. Stephanie suggests Gott’s Roadside and Humphrey Slocome ice cream.",
+        "links": [{
+            "url": "https://www.ferrybuildingmarketplace.com/",
+            "text": "The Ferry Building",
+            "class": "title"
+        }]
+    }
+]

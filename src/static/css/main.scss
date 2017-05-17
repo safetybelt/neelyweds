@@ -23,24 +23,32 @@ h1, h2 {
 
 h3, h4 {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 2.25rem;
+    font-size: 1.5rem;
     font-weight: $extra-strong-font-weight;
     margin: 0;
 }
 
-h4 {
-    font-size: 1.5em;
+h3 {
     text-transform: lowercase;
 }
 
+h4 {
+    font-size: 1.15em;
+}
+
 a {
-    color: inherit;
+    color: $secondary-dark;
     text-decoration: none;
+    &:focus {
+        color: $secondary-light;
+        text-decoration: underline;
+    }
     &:hover {
-        color: inherit;
+        color: $secondary;
+        text-decoration: underline;
     }
     &:visited {
-        color: inherit;
+        color: $secondary-dark;
     }
 }
 

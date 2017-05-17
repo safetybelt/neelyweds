@@ -3,7 +3,7 @@ import './banner.scss';
 
 const Banner = ({ title }) => (
     <div className="banner">
-        <h4>{title}</h4>
+        <h3>{title}</h3>
         <div className="banner-wrap left" />
         <div className="banner-wrap right" />
     </div>

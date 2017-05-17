@@ -1,3 +1,7 @@
+@import "~css/constants.scss";
+
 .wedding {
-    
+    .title {
+        font-weight: $strong-font-weight;
+    }
 }
