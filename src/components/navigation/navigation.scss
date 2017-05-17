@@ -1,6 +1,9 @@
 @import "~css/constants.scss";
 
 nav {
+    a {
+        text-decoration: none !important;
+    }
     align-items: center;
     display: flex !important;
     flex-flow: row nowrap;
