@@ -9,6 +9,13 @@ function replaceLinks(text, links = []) {
     return text;
 }
 
+function replaceIcons(text, icons = []) {
+    icons.forEach((icon) => {
+        text = text.replace('{icon}', `<i class=${icon.icon}>${icon.text || ''}</i>`);
+    });
+    return text;
+}
+
 function handleType(text, type = null) {
     switch (type) {
         case 'header':
@@ -27,6 +34,7 @@ function parseElement(element) {
     let html = replaceBreaks(element.text);
 
     html = replaceLinks(html, element.links);
+    html = replaceIcons(html, element.icons);
     html = handleType(html, element.type);
 
     return { __html: html };
@@ -36,7 +44,7 @@ export function getLayoutFromJson(json) {
     return json.map((elem, idx) => {
         if (elem.hasOwnProperty('image')) {
             const img = require(`img/${elem.image}`);
-            return (<img key={idx} src={img} />);             // why the fuck is this auto-indenting without the parentheses?
+            return <img key={idx} src={img} />;
         } else if (elem.hasOwnProperty('text')) {
             return <p key={idx}><span dangerouslySetInnerHTML={parseElement(elem)} /></p>;
         } else {

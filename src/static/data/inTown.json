@@ -5,10 +5,85 @@
         "text": "Oakland"
     },
     {
-        "text": "{link}{break}We had to include this one :) Great variety of beer, great mixed drinks, all outdoors to enjoy to California weather.",
+        "text": "{link}{break}We had to include this one {icon} Great variety of beer, great mixed drinks, all outdoors to enjoy to California weather.",
         "links": [{
             "url": "http://www.madoakbar.com",
             "text": "Mad Oak",
+            "class": "title"
+        }],
+        "icons": [{
+            "icon": "ion-happy-outline"
+        }]
+    },
+    {
+        "text": "{link}{break}More great beer, and some great food. Mostly outdoor seating with firepits, it’s a great place for a casual bite with a communal atmosphere.",
+        "links": [{
+            "url": "https://drinkdrakes.com/visit/dealership",
+            "text": "Drake’s Dealership",
+            "class": "title"
+        }]
+    },
+    {
+        "text": "{link}{break}Even more great beer.  They have a rotating tap of ~50 beers - a lot of which are local.  It’s a bit on the small side, but it also includes an outdoor area with a handful of tables.  They also have a great selection of canned/bottled beers if you want to take a few with you!",
+        "links": [{
+            "url": "http://beer-revolution.com",
+            "text": "Beer Revolution",
+            "class": "title"
+        }]
+    },
+    {
+        "text": "{link}{break}Roses are in bloom! A small but charming garden perfect for a chill walk.",
+        "links": [{
+            "url": "http://www2.oaklandnet.com/Government/o/opr/s/rental/OAK029375",
+            "text": "Morcom Rose Garden",
+            "class": "title"
+        }]
+    },
+    {
+        "text": "{link}{break}Where the engagement photos took place! In the running for venues, but we couldn’t make everything fit. If you have a chance and want some urban hiking, you can get some gorgeous views and surround yourself with giant trees here.",
+        "links": [{
+            "url": "http://www2.oaklandnet.com/Government/o/opr/s/Parks/JoaquinMiller",
+            "text": "Joaquin Miller Park",
+            "class": "title"
+        }]
+    },
+    {
+        "text": "{link}{break}The top ramen in the area (see what I did there?), it seems a bit pricey for a bowl of noodles but it’s a fantastic bowl of noodles. Perfect to cap off a chilly night, there’s usually a wait.",
+        "links": [{
+            "url": "http://www.ramenshop.com",
+            "text": "Ramen Shop",
+            "class": "title"
+        }]
+    },
+    {
+        "text": "{link}{break}Great for breakfast and lunch. Jonathan’s a big fan of the turkey cranberry panini, and they have really good coffee.",
+        "links": [{
+            "url": "http://www.terracegiftsandcoffee.com",
+            "text": "Broadway Terrace",
+            "class": "title"
+        }]
+    },
+    {
+        "text": "{link}{break}Not for the faint of heart. This Korean BBQ spot is a local favorite but has some risque advertisements on the wall. We’d suggest the stone bowl bibimbop (pork, seafood, and tofu are have all been tested), the bbq wings, cheesy corn, and with the yogurt soju to drink. Come hungry, and ask for regular water.",
+        "links": [{
+            "url": "https://www.yelp.com/biz/dan-sung-sa-oakland",
+            "text": "Dan Sung Sa",
+            "class": "title"
+        }]
+    },
+    {
+        "text": "{link}{break}On Friday nights, they have a large variety of food trucks and local music, plus activities for kids. One of Stephanie’s favorite things in the neighborhood.",
+        "links": [{
+            "url": "http://museumca.org",
+            "text": "Oakland Museum",
+            "class": "title"
+        }]
+    },
+    {
+        "text": "{link}{break}Not just one place, Jack London is host to great water views (including the iconic cranes), a great Sunday morning farmer’s market, and many good restaurants. For a historic visit, check out Heinhold’s First and Last Chance Saloon (opened in 1883), and then catch a ferry over to San Francisco for a quick boat ride.",
+        "links": [{
+            "url": "http://www.jacklondonsquare.com",
+            "text": "Jack London Square",
             "class": "title"
         }]
     },
@@ -17,10 +92,78 @@
         "text": "San Francisco"
     },
     {
-        "text": "{link}{break}This is where you’ll land if you take the ferry at Jack London. There’s so much food. Stephanie suggests Gott’s Roadside and Humphrey Slocome ice cream.",
+        "text": "{link}{break}This is where you’ll land if you take the ferry at Jack London. There’s so much food. Stephanie suggests Gott’s Roadside and Humphrey Slocome ice cream.  Jonathan suggests listening to Stephanie, she knows what she's talking about.",
         "links": [{
             "url": "https://www.ferrybuildingmarketplace.com/",
             "text": "The Ferry Building",
+            "class": "title"
+        }]
+    },
+    {
+        "text": "{link}{break}It’s a little weird, but a real San Francisco treat. Try a sushi burrito, or play it safe with pork katsu.",
+        "links": [{
+            "url": "https://www.sushirrito.com",
+            "text": "Sushiritto",
+            "class": "title"
+        }]
+    },
+    {
+        "text": "{link}{break}A neighborhood known for burritos and beer (and most places only accepting cash). Favorite burrito places include {link} and {link}.  Afterwards, wash them down with a beer from {link} or {link}.  And while you're at the latter, catch a movie upstairs at the {link}.  If you're looking for something more seedy, talk to Jonathan - he works in this area and can recommend a lot!",
+        "links": [{
+            "url": "https://goo.gl/maps/jJqRmbxd3N52",
+            "text": "The Mission District",
+            "class": "title"
+        },{
+            "url": "https://www.yelp.com/biz/la-taqueria-san-francisco-2",
+            "text": "La Taqueria",
+            "class": "title"
+        },{
+            "url": "https://www.yelp.com/biz/el-faro-san-francisco-2",
+            "text": "El Faro",
+            "class": "title"
+        },{
+            "url": "http://www.southernpacificbrewing.com",
+            "text": "Southern Pacific Brewing Co.",
+            "class": "title"
+        },{
+            "url": "http://bearvsbullbar.com",
+            "text": "Bear VS Bull Bar",
+            "class": "title"
+        },{
+            "url": "https://drafthouse.com/sf",
+            "text": "Alamo Drafthouse Theater",
+            "class": "title"
+        }]
+    },
+    {
+        "text": "{link}{break}On your way to Pier 39 to see the Sea Lions (yes it’s touristy, yes it’s worth it), stop in this vintage arcade for some really old games.",
+        "links": [{
+            "url": "http://www.museemechanique.org/about.html",
+            "text": "Musee Mecanique",
+            "class": "title"
+        }]
+    },
+    {
+        "text": "{link}{break}See the Sea Lions, catch some pictures of the Golden Gate Bridge and Alcatraz all in one stop. If you have time to schedule a tour of Alcatraz beforehand, it’s super interesting and also gives you great views of the bridge.",
+        "links": [{
+            "url": "https://www.pier39.com",
+            "text": "Pier 39",
+            "class": "title"
+        }]
+    },
+    {
+        "text": "{link}{break}A little more hiking with beautiful ocean and bridge views. There are scenic outlooks near the front so you don’t have to go far if you just want some easy scenery.",
+        "links": [{
+            "url": "http://www.inside-guide-to-san-francisco-tourism.com/lands-end-san-francisco.html",
+            "text": "Land’s End",
+            "class": "title"
+        }]
+    },
+    {
+        "text": "{link}{break}In the basement of a hotel, this adorably kitschy, great tiki drinks and food place is worth a visit. Late nights include a band floating through the restaurant.",
+        "links": [{
+            "url": "http://www.tongaroom.com",
+            "text": "Tonga Room",
             "class": "title"
         }]
     }
