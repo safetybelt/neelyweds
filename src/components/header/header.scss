@@ -7,6 +7,7 @@ header {
     z-index: 100;
     .background {
         background: $background-light;
+        // border-top: 0.35rem solid $secondary-light;
         box-shadow: $shadow-1;
         height: $header-height;
         left: 0;
