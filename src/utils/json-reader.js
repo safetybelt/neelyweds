@@ -11,7 +11,10 @@ function replaceLinks(text, links = []) {
 
 function replaceIcons(text, icons = []) {
     icons.forEach((icon) => {
-        text = text.replace('{icon}', `<i class=${icon.icon}>${icon.text || ''}</i>`);
+        if (!icon.hasOwnProperty('icon')) {
+            icon = { icon };
+        }
+        text = text.replace('{icon}', `<span class="icon"><i class="${icon.icon}" ${icon.size ? `style="font-size: ${icon.size}"` : ''}></i><span>${icon.text || ''}</span></span>`);
     });
     return text;
 }
@@ -40,13 +43,23 @@ function parseElement(element) {
     return { __html: html };
 }
 
+function getTypeIcons(types = null) {
+    return !types ? null : (
+        <span className="types-wrapper">
+            {types.map((type) => (
+                <span key={type} className="icon"><i className={type} /></span>
+            ))}
+        </span>
+    );
+}
+
 export function getLayoutFromJson(json) {
     return json.map((elem, idx) => {
         if (elem.hasOwnProperty('image')) {
             const img = require(`img/${elem.image}`);
             return <img key={idx} src={img} />;
         } else if (elem.hasOwnProperty('text')) {
-            return <p key={idx}><span dangerouslySetInnerHTML={parseElement(elem)} /></p>;
+            return <p key={idx} className={elem.class || null}>{getTypeIcons(elem.types)}<span dangerouslySetInnerHTML={parseElement(elem)} /></p>;
         } else {
             return <p key={idx}>{elem}</p>;
         }

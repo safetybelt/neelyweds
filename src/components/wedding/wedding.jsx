@@ -10,8 +10,17 @@ const Wedding = () => (
         <Banner title="the big day" />
         {getLayoutFromJson(day)}
         <Banner title="while you're in town" />
-        {getLayoutFromJson(inTown)}
+        <div className="in-town-wrapper">
+            {getLayoutFromJson(inTown)}
+        </div>
     </section>
 );
 
 export default Wedding;
+
+
+// md-beer = beer
+// md-restaurant = food
+// md-camera = site seeing
+// ios-people = family friendly
+// ios-cafe = coffee
