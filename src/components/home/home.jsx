@@ -1,8 +1,8 @@
 import React from 'react';
 import './home.scss';
 
-const fullImg = require('img/she-said-yes.jpg');
-const mobileImg = require('img/castle-kiss.jpg');
+const fullImg = require('img/highlights/Engagement57.jpg');
+const mobileImg = require('img/highlights/Engagement119.jpg');
 
 const Home = () => (
     <section id="home">

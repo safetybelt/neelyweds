@@ -18,4 +18,13 @@
             }
         }
     }
+    .hella-trendy {
+        display: flex;
+        flex-flow: row nowrap;
+
+    }
+    .trendy-box {
+        display: flex;
+        flex-flow: column
+    }
 }

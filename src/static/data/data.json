@@ -1,3 +1,44 @@
 {
-    "photos": ["aquarium", "cake-faces", "dolan-wedding", "fat-kids-1", "fat-kids-2", "hiking-flex", "hobbiton-kiss", "mt-diablo", "opera-house", "snow-kiss", "surfboards", "sydney-night"]
+    "photos": [{
+        "title": "aquarium",
+        "description": "That hammerhead almost got us!"
+    }, {
+        "title": "cake-faces",
+        "description": "Party hats and cake faces for a special birthday"
+    }, {
+        "title": "castle-kiss",
+        "description": "The happiest place on earth!"
+    }, {
+        "title": "dolan-wedding",
+        "description": "Here we are at a wedding for some very special and amazing people, the Dolans"
+    }, {
+        "title": "fat-kids-1",
+        "description": "New Zealand had some amaaaazing ice cream"
+    }, {
+        "title": "fat-kids-2",
+        "description": "New Zealand also had some amazing food trucks, including one that literally only sold waffles"
+    }, {
+        "title": "hiking-flex",
+        "description": "Showing off our guns after a long hike up the biggest mountain you've ever seen"
+    }, {
+        "title": "hobbiton-kiss",
+        "description": "We're basically Hobbits."
+    }, {
+        "title": "mt-diablo",
+        "description": "Just at the top of another mountin, no big deal"
+    }, {
+        "title": "opera-house",
+        "description": "Before a show at the Sydney Opera House!"
+    }, {
+        "title": "snow-kiss",
+        "description": "A winter wonderland in Colorado"
+    },  {
+        "title": "she-said-yes"
+    }, {
+        "title": "surfboards",
+        "description": "We looked good... out of the water"
+    }, {
+        "title": "sydney-night",
+        "description": "After the show at the Sydney Opera House!"
+    }]
 }

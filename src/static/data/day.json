@@ -6,8 +6,16 @@
             "text": "Preservation Park"
         }]
     },
-    "<hotel info tk - downtown Marriot at 1001 broadway will be #1 choice, I’ve emailed them for availability>",
-    "<Oakland has a free shuttle down Broadway that runs on a schedule and can be picked up across the street from the hotel to 12th St. >",
-    "The venue is easy to access via BART. Exit at the 12th St City Center station and walk 3 blocks down 12th or 14th St toward Clay St (if you hit Franklin, turn around, it’s the other way). The Park is located on MLK Jr Way between 12th and 14th.",
-    "There will also be a parking garage available (no overnight parking!) on MLK Jr Way, across the street from the park. Ubers and Lyfts are plentiful, and encouraged."
+    {
+        "text": "If you're coming from out of town, we have reserved a block of rooms in the {link}, which is located only a few blocks from the venue!  You can make reservations here: {link}",
+        "links": [{
+            "url": "http://www.oaklandmarriott.com/",
+            "text": "Oakland Marriott"
+        }, {
+            "url": "http://www.oaklandmarriott.com/",
+            "text": "Marriott Reservations"
+        }]
+    },
+    "The venue is easy to access via BART. Exit at the 12th St City Center station and walk 3 blocks down 12th or 14th St toward Clay St (if you hit Franklin, turn around, it’s the other way). The Park is located on Martin Luther King Jr Way between 12th and 14th.",
+    "There will also be a parking garage available (no overnight parking!), across the street from the park. Ubers and Lyfts are plentiful, cheap, and encouraged."
 ]
