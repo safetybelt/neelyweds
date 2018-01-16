@@ -75,6 +75,13 @@ section {
     display: none !important;
 }
 
+.primary-text {
+    color: $text-primary !important;
+    span {
+        color: $text-primary !important;
+    }
+}
+
 .icon {
     align-items: center;
     display: inline-flex;
@@ -87,6 +94,10 @@ section {
     span {
         font-size: 1rem;
         padding-left: 0.5rem;
+        color: $text-primary;
+    }
+    &.navicon {
+        color: $secondary;
     }
 }
 

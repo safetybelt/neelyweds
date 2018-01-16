@@ -1,59 +1,90 @@
-import React, { PropTypes } from 'react';
+import React, { Component, PropTypes } from 'react';
 import json from 'data/data.json';
 import { Banner } from 'components';
 
-const images = json.photos.map((img) => Object.assign({}, img, { url: require(`img/${img.title}-tn.jpg`) }));
-console.log(images);
+const images = json.photos.map((img) => Object.assign({}, img, { url: require(`img/${img.title}.jpg`) }));
 // const images = json.photos.map((img) => require(`img/${img}.jpg`));
 
 import './photographs.scss';
 
 /* eslint-disable react/no-multi-comp */
 
-const PhotoDescription = ({ main, secondary, width, horizontal = false, reverse = false, arrow = false, }) => {
-    const convert = (elem) => {
-        switch (elem.type) {
-            case 'img':
-                return <img src={elem.url} />;
-            case 'text':
-                return <p>{elem.text}</p>;
+class Photographs extends Component {
+    state = {
+        selected: null,
+    }
+
+    componentDidMount() {
+        document.addEventListener('keydown', this.handleKeyDown.bind(this));
+    }
+
+    componentWillUnmount() {
+        document.removeEventListener('keydown', this.handleKeyDown.bind(this));
+    }
+
+    handleKeyDown(e) {
+        switch (e.key) {
+            case 'ArrowLeft': 
+                this.selectImage('prev');
+                break;
+            case 'ArrowRight':
+                this.selectImage('next');
+                break;
+            case 'Escape':
+                this.selectImage(null);
+                break;
             default:
-                return null;
+                break;
         }
-    };
+    }
 
-    return (
-        <div className={`trendy-box ${width || 'standard'}${horizontal ? ' horizontal' : ''}`}>
-            <div className={`primary-wrapper${reverse} ? ' reverse' : ''`}>
-                {convert(main)}
-            </div>
-            <div className={`secondary-wrapper${arrow ? ' arrow' : ''}`}>
-                {convert(secondary)}
-            </div>
-        </div>
-    );
+    selectImage(idx) {
+        if (idx === 'prev' && this.state.selected !== null) {
+            idx = this.state.selected - 1 || 0;
+        } else if (idx === 'next' && this.state.selected !== null) {
+            idx = this.state.selected + 1 || images.length -1;
+        }
+
+        if (idx < 0) {
+            idx = images.length - 1;
+        } else if (idx >= images.length) {
+            idx = 0;
+        }
+
+        return this.setState({
+            selected: idx,
+        });
+    }
+
+    render() {
+        const selected = images[this.state.selected] || null;
+        return (
+            <section className="photographs">
+                <Banner title="photographs" />
+                <div className="hella-trendy">
+                    {images.map((img, i) => (
+                        <img key={i} src={img.url} onClick={() => this.selectImage(i)} />
+                    ))}
+                </div>
+                {!selected ? null : (
+                    <div className="photo-details">
+                        <div className="photo-cover" onClick={() => this.selectImage(null)} />
+                        <div className="arrow-wrapper left" onClick={() => this.selectImage('prev')}>
+                            <i className="icon navicon ion-chevron-left" />
+                        </div>
+                        <div className="photo-wrapper">
+                            <img src={selected.url} />
+                            <i className="icon navicon navicon-close ion-close" onClick={() => this.selectImage(null)} />
+                        </div>
+                        <div className="arrow-wrapper right" onClick={() => this.selectImage('next')}>
+                            <i className="icon navicon ion-chevron-right" />
+                        </div>
+                    </div>
+                )}
+            </section>
+        );
+    }
 };
-
-PhotoDescription.propTypes = {
-    main: PropTypes.shape({ type: PropTypes.string }),
-    secondary: PropTypes.shape({ type: PropTypes.string }),
-    width: PropTypes.string,
-    horizontal: PropTypes.bool,
-    reverse: PropTypes.bool,
-    arrow: PropTypes.bool,
-};
-
-const Photographs = () => (
-    <section className="photographs">
-        <Banner title="photographs" />
-        <div className="hella-trendy">
-            <PhotoDescription
-                main={{ type: 'img', url: images[0].url }}
-                secondary={{ type: 'text', text: images[0].description }}
-            />
-        </div>
-    </section>
-);
 
 /* eslint-enable */
 

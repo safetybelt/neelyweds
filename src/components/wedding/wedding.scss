@@ -10,6 +10,11 @@
         }
         p {
             flex-basis: 45%;
+            display: flex;
+            flex-flow: row nowrap;
+            > span {
+                color: $text-secondary;
+            }
         }
     }
     .legend > span {
@@ -30,13 +35,6 @@
         flex-flow: column nowrap;
         margin: -0.35rem 0;
         padding-right: 1rem;
-    }
-    p {
-        display: flex;
-        flex-flow: row nowrap;
-        > span {
-            color: $text-secondary;
-        }
     }
     @media (max-width: $mobile-width) {
         .legend > span {

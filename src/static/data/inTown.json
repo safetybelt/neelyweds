@@ -1,7 +1,7 @@
 [
     {
         "text": "We’re so happy you’re able to make the trip! We hope you’ll have a chance to explore Oakland and San Francisco while you’re here. We’ve listed a few of our favorite spots.",
-        "class": "full-width"
+        "class": "full-width primary-text"
     },
     {
         "text": "{icon}{icon}{icon}{icon}{icon}",
@@ -134,7 +134,7 @@
         "types": ["ion-android-restaurant", "ion-ios-people"]
     },
     {
-        "text": "{link}{break}A neighborhood known for burritos and beer (and most places only accepting cash). Favorite burrito places include {link} and {link}.  Afterwards, wash them down with a beer from {link} or {link}.  And while you're at the latter, catch a movie upstairs at the {link}.  If you're looking for something more seedy, talk to Jonathan - he works in this area and can recommend a lot!",
+        "text": "{link}{break}A neighborhood known for burritos and beer (and most places only accepting cash). Favorite burrito places include {link} and {link}.  Afterwards, wash them down with a beer from {link} or {link}.  And while you're at the latter, catch a movie upstairs at the {link}.  You can also find the very first {link} here, which is a local staple.  If you're looking for something more seedy, talk to Jonathan - he works in this area and can recommend a lot!",
         "links": [{
             "url": "https://goo.gl/maps/jJqRmbxd3N52",
             "text": "The Mission District",
@@ -159,8 +159,12 @@
             "url": "https://drafthouse.com/sf",
             "text": "Alamo Drafthouse Theater",
             "class": "title"
+        },{
+            "url": "https://goo.gl/maps/btmcbspRD1N2",
+            "text": "Philz Coffee",
+            "class": "title"
         }],
-        "types": ["ion-android-restaurant", "ion-beer"]
+        "types": ["ion-android-restaurant", "ion-beer", "ion-coffee"]
     },
     {
         "text": "{link}{break}See the Sea Lions, catch some pictures of the Golden Gate Bridge and Alcatraz all in one stop. If you have time to schedule a tour of Alcatraz beforehand, it’s super interesting and also gives you great views of the bridge.",
