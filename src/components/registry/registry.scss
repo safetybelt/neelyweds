@@ -1,0 +1,17 @@
+.registry {
+    .logo-wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        padding: 2rem 0;
+        a {
+            flex-basis: 50%;
+            flex-grow: 2;
+            flex-shrink: 2;
+            max-height: 12rem;
+        }
+        img {
+            max-height: 12rem;
+        }
+    }
+}

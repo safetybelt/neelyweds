@@ -1,0 +1,36 @@
+@import "~css/constants.scss";
+
+.banner {
+    align-items: center;
+    background: $secondary-light;
+    box-shadow: $shadow-2;
+    color: $inverse-text-primary;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0.15rem;
+    margin: 0 -2rem 1rem;
+    margin-left: -2rem;
+    padding: 0.25rem 0;
+    position: relative;
+    text-align: center;
+    text-shadow: $shadow-1;
+    vertical-align: middle;
+    width: calc(100% + 4rem);
+    z-index: 25;
+    .banner-wrap {
+        border-top: 0;
+        border-bottom: 0.75rem solid transparent;
+        height: 0;
+        position: absolute;
+        top: 100%;
+        width: 0;
+        &.left {
+            left: 0;
+            border-right: 1rem solid $secondary-dark;
+        }
+        &.right {
+            right: 0;
+            border-left: 1rem solid $secondary-dark;
+        }
+    }
+}

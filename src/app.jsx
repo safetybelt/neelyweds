@@ -1,9 +1,9 @@
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
-import { Header } from 'components';
+import { HeaderContainer } from 'containers';
 import { setPath } from 'actions';
 import 'normalize.css/normalize.css';
-import styles from 'css/main.scss';
+import 'css/main.scss';
 
 class App extends React.Component {
     componentWillMount() {
@@ -18,14 +18,14 @@ class App extends React.Component {
         if (path.startsWith('/')) {
             path = path.slice(1);
         }
-        path = !path ? 'about' : path;
+        path = !path ? '/' : path;
         this.props.dispatch(setPath(path));
     }
 
     render() {
         return (
-            <div className={styles.container}>
-                <Header />
+            <div className="container">
+                <HeaderContainer />
                 <main>
                     {this.props.children}
                 </main>
@@ -36,7 +36,8 @@ class App extends React.Component {
 
 App.propTypes = {
     dispatch: PropTypes.func,
-    location: PropTypes.object,
+    location: PropTypes.object,     // eslint-disable-line react/forbid-prop-types
+    children: PropTypes.object,     // eslint-disable-line react/forbid-prop-types
 };
 
 export default connect()(App);

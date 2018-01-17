@@ -7,22 +7,23 @@ $background:                #F5F5F5;
 $background-dark:           #E0E0E0;
 $black:                     #000000;
 
-$primary-light:             #FFCDD2;
-$primary:                   #F44336;
-$primary-dark:              #D32F2F;
+$primary-light:             #4DD0E1;
+$primary:                   #00BCD4;
+$primary-dark:              #00838F;
 
-$secondary-light:           #40C4FF;
-$secondary:                 #00B0FF;
-$secondary-dark:            #0091EA;
+$secondary-light:           #9C27B0;
+$secondary:                 #7B1FA2;
+$secondary-dark:            #4A148C;
 
 
 /*********
 * VALUES
 *********/
-$content-padding:           36px;
-$light-font-weight:         300;
-$standard-font-weight:      400;
-$strong-font-weight:        700;
+$content-padding:           2rem;
+
+$standard-font-weight:      300;
+$strong-font-weight:        400;
+$extra-strong-font-weight:  700;
 
 $opacity-primary:           0.87;
 $opacity-secondary:         0.54;
@@ -47,14 +48,15 @@ $inverse-text-disabled:     rgba(255, 255, 255, 0.5);
 /*********
 * SHADOWS
 *********/
-$shadow-1:      0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-$shadow-2:      0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-$shadow-3:      0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-$shadow-4:      0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-$shadow-5:      0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+$white-text-shadow:         0 1px 2px rgba(0, 0, 0, 0.20);
+$shadow-1:                  0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+$shadow-2:                  0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+$shadow-3:                  0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+$shadow-4:                  0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+$shadow-5:                  0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 
 
 /*********
 * MEDIA VALUES
 *********/
-$mobile-width:             1023px;
+$mobile-width:             768px;

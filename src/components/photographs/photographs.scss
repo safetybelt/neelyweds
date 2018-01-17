@@ -1,0 +1,78 @@
+@import "~css/constants.scss";
+
+.photographs {
+    .hella-trendy {
+        display: flex;
+        flex-flow: row wrap;
+        img {
+            height: 10rem;
+            object-fit: cover;
+            width: 12.5%;
+            @media (max-width: $mobile-width) {
+                width: 50%;
+            }
+        }
+    }
+    .photo-details {
+        align-items: center;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        padding: 5rem;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 99;
+        .navicon-close {
+            cursor: pointer;
+            position: absolute;
+            right: 0.25rem;
+            top: 0.25rem;
+        }
+        .photo-cover {
+            background: transparentize($background-dark, 0.2);
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+        .photo-wrapper {
+            background: $white;
+            box-shadow: $shadow-4;
+            max-height: 90vh;
+            max-width: 80vw;
+            padding: 1.5rem 1.5rem 3rem;
+            position: relative;
+            z-index: 100;
+            @media (max-width: $mobile-width) {
+                padding: 0.75rem 0.75rem 1.5rem;
+            }
+        }
+        .arrow-wrapper {
+            cursor: pointer;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            height: 100%;
+            flex-grow: 2;
+            &.left {
+                justify-content: flex-start;
+            }
+            &.right {
+                justify-content: flex-end;
+            }
+        }
+        img {
+            max-height: 80vh;
+            max-width: 100%;
+            object-fit: contain;
+        }
+        @media (max-width: $mobile-width) {
+            padding: 0.25rem;
+        }
+    }
+}

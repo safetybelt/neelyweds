@@ -1,33 +1,67 @@
-@import url(http://weloveiconfonts.com/api/?family=entypo);
 @import "~css/constants.scss";
 
-/* entypo */
-[class*="entypo-"]:before {
-  font-family: 'entypo', sans-serif;
-  font-size: 1.2em;
-  padding: 0 0.2em;
-}
-
 html {
-    background-color: $background;
+    background: $primary;
+    background: linear-gradient(135deg, $primary-light 0%, $primary-dark 100%);
     box-sizing: border-box;
     color: $text-primary;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 22px;
+    font-family: 'Poppins', serif;
+    font-size: 18px;
     font-weight: $standard-font-weight;
+    line-height: 1.5;
+    min-height: 100%;
 }
 
 *, *:before, *:after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
-h1, h2, h3, h4 {
-    font-family: 'Oswald', sans-serif;
-    font-weight: $strong-font-weight;
+h1, h2 {
+    font-family: 'Abril Fatface', cursive;
+    font-weight: $standard-font-weight;
+    margin: 0.5rem;
+}
+
+h3, h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: $extra-strong-font-weight;
+    margin: 0;
 }
 
 h3 {
-    font-weight: $standard-font-weight;
+    text-transform: lowercase;
+}
+
+h4 {
+    font-size: 1.15em;
+}
+
+a {
+    color: $secondary-dark !important;
+    text-decoration: none;
+    &:focus {
+        color: $secondary-light !important;
+        text-decoration: underline;
+    }
+    &:hover {
+        color: $secondary !important;
+        text-decoration: underline;
+    }
+    &:visited {
+        color: $secondary-dark !important;
+    }
+}
+
+section {
+    background: $background-light;
+    box-shadow: $shadow-2;
+    margin-top: 1.5rem;
+    padding: 1rem 1rem 2rem;
+    position: relative;
+    @media (max-width: $mobile-width) {
+        margin-top: $header-height + 1.5rem;
+    }
 }
 
 .container {
@@ -37,21 +71,39 @@ h3 {
     width: 100%;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
-    &:hover {
-        color: inherit;
-    }
-    &:visited {
-        color: inherit;
+.hidden {
+    display: none !important;
+}
+
+.primary-text {
+    color: $text-primary !important;
+    span {
+        color: $text-primary !important;
     }
 }
 
-section {
-    min-height: calc(100vh - #{$header-height + $footer-height});
-    padding-top: 1.5rem;
+.icon {
+    align-items: center;
+    display: inline-flex;
+    flex-flow: row nowrap;
+    font-size: 1.5rem;
+    font-style: normal;
+    i {
+        color: $primary;
+    }
+    span {
+        font-size: 1rem;
+        padding-left: 0.5rem;
+        color: $text-primary;
+    }
+    &.navicon {
+        color: $secondary;
+    }
+}
+
+.mobile-only {
+    display: none;
     @media (max-width: $mobile-width) {
-        margin-top: $header-height;
+        display: inline-block;
     }
 }

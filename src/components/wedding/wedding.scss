@@ -1,0 +1,49 @@
+@import "~css/constants.scss";
+
+.wedding {
+    .in-town-wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        .full-width {
+            flex-basis: 100%;
+        }
+        p {
+            flex-basis: 45%;
+            display: flex;
+            flex-flow: row nowrap;
+            > span {
+                color: $text-secondary;
+            }
+        }
+    }
+    .legend > span {
+        background-color: $background;
+        border-bottom: 1px solid $secondary-light;
+        border-top: 1px solid $secondary-light;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .title {
+        color: $text-primary;
+        font-weight: $strong-font-weight;
+    }
+    .types-wrapper {
+        display: flex;
+        flex-flow: column nowrap;
+        margin: -0.35rem 0;
+        padding-right: 1rem;
+    }
+    @media (max-width: $mobile-width) {
+        .legend > span {
+            justify-content: flex-start;
+            padding: 0 10%;
+            width: 100%;
+        }
+        p {
+            flex-basis: 100% !important;
+        }
+    }
+}

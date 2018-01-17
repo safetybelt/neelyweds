@@ -28,11 +28,11 @@ function getContainer(component) {
     );
 }
 
-render(getContainer(App), document.querySelector("#app"));
+render(getContainer(App), document.querySelector('#app'));
 
 if (module.hot) {
     module.hot.accept('./app', () => {
         const App = require('./app').default;
-        render(getContainer(App), document.querySelector("#app"));
+        render(getContainer(App), document.querySelector('#app'));
     });
 }
