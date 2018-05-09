@@ -36,6 +36,9 @@
         margin: -0.35rem 0;
         padding-right: 1rem;
     }
+    iframe {
+        margin-bottom: 2rem;
+    }
     @media (max-width: $mobile-width) {
         .legend > span {
             justify-content: flex-start;
