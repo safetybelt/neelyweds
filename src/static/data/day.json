@@ -1,7 +1,10 @@
 [
     {
-        "text": "We’re excited to be married in Downtown Oakland at Preservation Park. Located close to Stephanie’s first Oakland apartment with Victorian housing reminiscent of Main St Disney, it felt like the perfect fit. You can learn more about Preservation Park’s history by checking it out here: {link}",
+        "text": "We’re excited to be married in {link}. Located close to Stephanie’s first Oakland apartment with Victorian housing reminiscent of Main St Disney, it felt like the perfect fit. You can learn more about Preservation Park’s history by checking it out here: {link}",
         "links": [{
+            "url": "",
+            "text": "Downtown Oakland at Preservation Park"
+        }, {
             "url": "http://preservationpark.com/about/",
             "text": "Preservation Park"
         }]
@@ -17,5 +20,6 @@
         }]
     },
     "The venue is easy to access via BART. Exit at the 12th St City Center station and walk 3 blocks down 12th or 14th St toward Clay St (if you hit Franklin, turn around, it’s the other way). The Park is located on Martin Luther King Jr Way between 12th and 14th.",
-    "There will also be a parking garage available (no overnight parking!), across the street from the park. Ubers and Lyfts are plentiful, cheap, and encouraged."
+    "There will also be a parking garage available (no overnight parking!), across the street from the park. Ubers and Lyfts are plentiful, cheap, and encouraged.",
+    "The map below has the wedding location, parking garage, BART, and the hotel all marked; hope it's helpful!"
 ]

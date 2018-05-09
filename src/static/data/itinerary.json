@@ -1,0 +1,34 @@
+[
+    {
+        "type": "header",
+        "text": "Friday, 5/11 - Welcome to Oakland!"
+    }, {
+        "text": "At 8 PM, we'll be at {link} to mingle after the rehearsal dinner.  Please stop by for a drink if you're in the area!",
+        "links": [{
+            "url": "https://goo.gl/maps/JfuGqK4PmCS2",
+            "text": "Drake's Dealership Bar"
+        }]
+    }, {
+        "type": "header",
+        "text": "Saturday, 5/12 - Wedding Day!"
+    },
+    "3 PM - Ceremony begins.  It's going to be a beautiful night, we found something FUN to do.",
+    "3:30 PM - Cocktail Hour with the Neelys begins.",
+    "5 PM - Taco bout a party!  Dinner is served, then it's time to start serving on the dance floor.",
+    {
+        "text": "10 PM - You don't have to go home, but you can't stay here.  Meet us at {link} to keep the party going!",
+        "links": [{
+            "url": "https://goo.gl/maps/LDP2rJnU47C2",
+            "text": "Mad Oak Bar"
+        }]
+    }, {
+        "type": "header",
+        "text": "Saturday, 5/13 - So long, and thanks for all the fish!"
+    }, {
+        "text": "9 AM - Farewell breakfast.  Join us at {link} in the hotel for a cuppa joe if you have time.  Thank you for celebrating with us - we're heading back to DisneyLand tomorrow!",
+        "links": [{
+            "url": "https://goo.gl/maps/dWzmyNaw1fx",
+            "text": "Iron & Oak Restaurant"
+        }]
+    }
+]
